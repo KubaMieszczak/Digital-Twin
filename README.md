@@ -20,6 +20,6 @@ Our 'robot' to detect:
 
 # Results of project:
 We shows the image that we will use to detects objects.
-Secound pictore is a map with robot represinting localizsation of robot in magazine
+Second picture is a map with robot representing localization of robot in magazine
 
 ![image](https://user-images.githubusercontent.com/106450951/209827353-dcb14df7-c6e0-4177-a2eb-58715401eaee.png)
