@@ -14,6 +14,9 @@ Project aim to detect a robot in warehouse and determine its localization on map
 3. Once again, we learn the detection model of our robot, model performers is not bad but sometines it detects more then one robot, to solve that problem we are checking color of detected object to find out if our object is a robot. We determing it by RGB elements.
 ![image](https://user-images.githubusercontent.com/106450951/209826740-fdb8b1a1-55c0-46d6-b6af-c129c31edea3.png)
 
+Our 'robot' to detect:
+![image](https://user-images.githubusercontent.com/106450951/209827787-56163101-9234-419e-af22-19e762dec6e2.png)
+
 # Results of project:
 We shows the image that we will use to detects objects.
 Secound pictore is a map with robot represinting localizsation of robot in magazine
