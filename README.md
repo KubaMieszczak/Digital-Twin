@@ -1,27 +1,19 @@
 # Digital Twin
 
+## Project description
+Project aim to detect a robot in warehouse and determine its localization on map. We will use cascade classifier learned on our own data. Images is collected from the webcam of the laptop.
+
 ## How it works:
 1. We are learning the warehouse corner point detection model, with our data
+![image](https://user-images.githubusercontent.com/106450951/209823741-6e41abc0-7c87-4b2a-b24b-80e95850be8e.png)
 
 
-2. Włączamy program komendą 'python number_detector.py'
+2. Model we created, are not perfect. Sometines it detects objects that are not corners of warehouse. I decited to make confidence intervals besause camera will be places at similar angle for the most of the time. Persormers now is much better
+![image](https://user-images.githubusercontent.com/106450951/209826259-d32711b9-e540-493d-9407-521ee7de981d.png)
 
-4. Widzmy następujące menu
-![image](https://user-images.githubusercontent.com/106450951/205080269-5fb51240-99d3-4698-8ec2-b577c23ba476.png)
+3. Once again, we learn the detection model of our robot, model performers is not bad but sometines it detects more then one robot, to solve that problem we are checking color of detected object to find out if our object is a robot. We determing it by RGB elements.
+![image](https://user-images.githubusercontent.com/106450951/209826740-fdb8b1a1-55c0-46d6-b6af-c129c31edea3.png)
 
-
-5. Komenda 'Wyświetlanie działania programu', w krótki sposób opisuje na czym polega program
-![image](https://user-images.githubusercontent.com/106450951/205080518-475c7150-1bf8-4c63-b372-d8b56277d2e9.png)
-
-6. Komenda 'Wczytaj obraz', daje możliwość wczytania konkretnego pliku z obrazem 28x28 z foldera.
-Do foldera można dodawać własne obrazy *o ile mają taką samą rozdzielczość co przykładowe dane*
-![image](https://user-images.githubusercontent.com/106450951/205080867-94364f45-f987-41ff-9659-9980f9b10528.png)
-
-7. Komenda 'Start' o ile wcześniej wczytaliśmy jakiś plik, możemy rozpoznać jaki numer widnieje na obrazie.
-Zwracana jest przewidziana liczba oraz dokładnośc przewidywania.
-![image](https://user-images.githubusercontent.com/106450951/205082323-24b7383e-5ed4-416c-9279-669e336927a6.png)
-
-8. Komenda 'Wyświetl wybrany obraz' genereuje okno z naszym obrazem.
-![image](https://user-images.githubusercontent.com/106450951/205082619-dc39a00c-5386-4e14-8505-793ab4a94ab9.png)
-
-9. Komenda 'Wyjdź' kończy działanie naszej funkcji
+# Results of project:
+We shows the image that we will use to detects objects.
+Secound pictore is a map with robot represinting localizsation of robot in magazine
